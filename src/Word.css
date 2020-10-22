@@ -1,4 +1,39 @@
-.word>h1{
+.word{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.word__text{
+    display: flex;
     color: white;
+    padding: 10px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    background-color: #94b4a4;
+    padding:12px;
+    border-radius: 30px;
+}
+.word__text>.MuiSvgIcon-root{
+    margin-right: 10px;
+    font-size: 100px;
+}
+.word__text>.MuiSvgIcon-root:hover{
+    cursor: pointer;
+}
+
+.word>p{
+    max-width: 80%;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: white;
+    background-color:#94b4a4;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-radius: 40px;
 }
