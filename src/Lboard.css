@@ -4,3 +4,8 @@
     height: 100%;
     border-radius: 20px;
 }
+.lboard>h1{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
