@@ -1,0 +1,10 @@
+.app{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #051421, #042727);
+  }
+
+  .app__center{
+      display: flex;
+      justify-content: space-between;
+  }
