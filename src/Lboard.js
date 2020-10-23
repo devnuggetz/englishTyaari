@@ -5,7 +5,18 @@ function Lboard() {
     return (
         <div className='lboard'>
             <h1>Leaderboard</h1>
-            <p>Daddy69</p>
+                <tr>
+                    <td>Daddy69</td>
+                    <td>65454</td>
+                </tr>
+                <tr>
+                    <td>Shaun</td>
+                    <td>45454</td>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>14132</td>
+                </tr>
         </div>
     )
 }

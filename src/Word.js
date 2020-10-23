@@ -6,7 +6,7 @@ import CorrectWord from './CorrectWord';
 
 function Word() {
     const [timer, setTimer] = useState(5)
-    const audioFile= wordData[0].audio;
+    var audioFile = new Audio(wordData[0].audio)
     var newTime=timer;
     function runTimer(){
         setInterval(() => {
@@ -20,12 +20,9 @@ function Word() {
             }
         },1000)
     }
-    function playAudio(){
-        
-    }
     function handleClick(){
         runTimer();
-        playAudio();
+        audioFile.play();
     }
     return (
         <div className='word'>
@@ -38,7 +35,7 @@ function Word() {
                 {timer==="Time's Up!"&&<CorrectWord word={wordData[0].word}/>}
                 </div>
             </div>
-            <p></p>
+                <p>{wordData[0].def}</p>
         </div>
     )
 }

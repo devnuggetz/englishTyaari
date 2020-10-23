@@ -9,3 +9,16 @@
     padding: 5px;
     margin: 5px;
 }
+.lboard td{
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.lboard>tr:nth-of-type(odd){
+    background-color: #94b4a4;
+}
+.lboard>tr{
+    display: flex;
+    justify-content: space-between;
+}
