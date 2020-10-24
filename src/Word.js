@@ -1,22 +1,22 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Word.css'
 import HearingIcon from '@material-ui/icons/Hearing';
 import wordData from './WordData';
 import CorrectWord from './CorrectWord';
 
-function Word() {
-    const [timer, setTimer] = useState(5)
-    var audioFile = new Audio(wordData[0].audio)
-    var newTime=timer;
+function Word(props) {
+    const index= Math.floor(Math.random()*9) 
+    var audioFile = new Audio(props.audio)
+    var newTime=props.timer;
     function runTimer(){
         setInterval(() => {
             if(newTime>0)
             {
                 newTime=newTime-1
-                setTimer(newTime)
+                props.setTimer(newTime)
             }else if(newTime===0)
             {
-                setTimer("Time's Up!");
+                props.setTimer("Time's Up!");
             }
         },1000)
     }
@@ -29,13 +29,13 @@ function Word() {
             <div className='word__text'>
                 <div className='word__timer'>
                 <HearingIcon onClick={handleClick}/>
-                <h1>{timer}</h1>
+                <h1>{props.timer}</h1>
                 </div>
                 <div className='word__display'>
-                {timer==="Time's Up!"&&<CorrectWord word={wordData[0].word}/>}
+                {props.timer==="Time's Up!"&&<CorrectWord word={props.word}/>}
                 </div>
             </div>
-                <p>{wordData[0].def}</p>
+                <p>{props.def}</p>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import './App.css';
 import Entry from './Entry';
 import Header from './Header';
@@ -8,23 +8,40 @@ import Word from './Word';
 import wordData from './WordData';
 
 function App() {
+  const [index, setIndex] = useState(0)
+  const [timer, setTimer] = useState(5)
   return (
     <div className="app">
       <Header />
       <LandingPage />
-      {/* <div className='app__center'>
+      <div className='app__center'>
           <div className='app__right'>
-            <Word />
-            <Entry word={wordData[0].word}/>
+              
+              <Word 
+               word={wordData[index].word}
+               def={wordData[index].def}
+               audio={wordData[index].audio} 
+               timer={timer}
+               setTimer={setTimer}
+               
+               />
+               
+               <Entry 
+                word={wordData[index].word} 
+                setIndex={setIndex} 
+                index={index}
+                setTimer={setTimer}
+                />
+               
+            
           </div>
           <div className='app__left'>
-            <Lboard />
+              <Lboard />
           </div>
-      </div> */}
-      
-      
+      </div>
     </div>
   );
 }
 
 export default App;
+

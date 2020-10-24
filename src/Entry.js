@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './Entry.css'
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
-
 function Entry(props) {
     const [entry, setEntry] = useState('');
     function handleChange(event){
@@ -10,34 +9,46 @@ function Entry(props) {
     function submissionCheck(){
         if(entry.toUpperCase()===props.word.toUpperCase())
         {
-            console.log("sucess");
+            alert("sucess");
+            
 
         }else{
-            console.log('NO No No')
+            alert('NO No No')
+            
         }
     }
     function submissionCheck_(event){
-        if(event.key === 'Enter'){
+        if(event.keyCode === 13){
                     if(entry.toUpperCase()===props.word.toUpperCase())
                 {
-                    console.log("sucess");
+                    alert("sucess");
+                    
                     
                 }else{
-                    console.log('NO No No')
+                    alert('NO No No')
+                    
                 }
         }
-        
+
+    }
+    const handleIndex=()=>{
+        if(props.index===9){
+            props.setIndex(0)
+        }else{
+            props.setIndex(props.index+1)
+        }
+        props.setTimer(5)
     }
     
     return (
         <div className='entry'>
-            <input type='text' placeholder='Type the word' onChange={handleChange}></input>
+            <input type='text' placeholder='Type the word' onChange={handleChange} onKeyDown={submissionCheck_}></input>
             <div className='entry__button'>
-            <button onKeyDown={submissionCheck_} onClick={submissionCheck}>Submit</button>
-            <button>Next Word</button>
+            <button onClick={submissionCheck}>Submit</button>
+            <button onClick={handleIndex}>Next Word</button>
             </div>
             
-            <CheckCircleIcon />
+            {/* <CheckCircleIcon /> */}
         </div>
     )
 }
