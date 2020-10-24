@@ -1,4 +1,8 @@
-.landingPage{
+.landingPage__center{
     display: flex;
     justify-content: space-evenly;
+}
+.landingPage__footer{
+    display: flex;
+    justify-content: center;
 }

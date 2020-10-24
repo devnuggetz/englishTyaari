@@ -1,63 +1,63 @@
 const wordData=[
     {
         id: '1',
-        word: 'absolution',
+        word: 'Absolution',
         audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/absolution--_gb_1.mp3',
-        def: 'the act of forgiving someone, especially in the Christian religion, for something bad that they have done or thought:'
+        def: 'The act of forgiving someone, especially in the Christian religion, for something bad that they have done or thought.'
     },
     {
         id: '2',
-        word: 'mellifluous',
+        word: 'Mellifluous',
         audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/mellifluous--_gb_1.8.mp3',
-        def: 'having a pleasant and flowing sound:'
+        def: 'Having a pleasant and flowing sound.'
     },
     {
         id: '3',
-        word: 'absurdity',
+        word: 'Absurdity',
         audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/absurdity--_gb_1.mp3',
-        def: 'stupid and unreasonable, or silly in a humorous way:'
+        def: 'Stupid and unreasonable, or silly in a humorous way.'
     },
     {
         id: '4',
-        word: 'audacious',
+        word: 'Audacious',
         audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/audacious--_gb_1.mp3',
-        def: 'showing a willingness to take risks or offend people:'
+        def: 'Showing a willingness to take risks or offend people.'
     },
     {
         id: '5',
-        word: 'absolution',
-        audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/absolution--_gb_1.mp3',
-        def: 'the act of forgiving someone, especially in the Christian religion, for something bad that they have done or thought:'
+        word: 'Patronize',
+        audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/patronize--_gb_1.mp3',
+        def: 'Treat in a way that is apparently kind or helpful but that betrays a feeling of superiority.'
     },
     {
         id: '6',
-        word: 'absolution',
-        audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/absolution--_gb_1.mp3',
-        def: 'the act of forgiving someone, especially in the Christian religion, for something bad that they have done or thought:'
+        word: 'Convoke',
+        audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/xconvoke--_gb_1.mp3',
+        def: 'Call together or summon (an assembly or meeting).'
     },
     {
         id: '7',
-        word: 'absolution',
-        audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/absolution--_gb_1.mp3',
-        def: 'the act of forgiving someone, especially in the Christian religion, for something bad that they have done or thought:'
+        word: 'Debonair',
+        audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/debonair--_gb_2.mp3',
+        def: 'Confident, stylish, and charming (typically used of a man).'
     },
     {
         id: '8',
-        word: 'absolution',
-        audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/absolution--_gb_1.mp3',
-        def: 'the act of forgiving someone, especially in the Christian religion, for something bad that they have done or thought:'
+        word: 'Euphony',
+        audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/euphony--_gb_1.mp3',
+        def: 'The quality of being pleasing to the ear.'
     },
     {
         id: '9',
-        word: 'absolution',
-        audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/absolution--_gb_1.mp3',
-        def: 'the act of forgiving someone, especially in the Christian religion, for something bad that they have done or thought:'
+        word: 'Inculcate',
+        audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/inculcate--_gb_1.mp3',
+        def: 'Instil (an idea, attitude, or habit) by persistent instruction.'
     },
     {
         id: '10',
-        word: 'absolution',
-        audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/absolution--_gb_1.mp3',
-        def: 'the act of forgiving someone, especially in the Christian religion, for something bad that they have done or thought:'
+        word: 'Nefarious',
+        audio: 'https://ssl.gstatic.com/dictionary/static/sounds/20200429/nefarious--_gb_1.8.mp3',
+        def: '(typically of an action or activity) wicked or criminal.'
     },
 
 ]

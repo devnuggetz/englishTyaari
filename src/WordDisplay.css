@@ -1,0 +1,12 @@
+.wordDisplay{
+    background-color: white;
+    padding: 12px;
+    border-radius: 99px;
+    bottom: 0;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 70%;
+}
