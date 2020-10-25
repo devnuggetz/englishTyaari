@@ -2,11 +2,11 @@ import React from 'react'
 import './Login.css'
 import {auth, provider} from './firebase'
 
-function Login() {
+function Login(props) {
     const signIn=()=>{
         auth.signInWithPopup(provider)
         .then(result=>{
-            console.log(result)
+            props.setUser(result.user)
         }).catch(error=>alert(error.message))
     }
     return (

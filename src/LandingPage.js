@@ -4,11 +4,13 @@ import Login from './Login'
 import './LandingPage.css'
 import WordDisplay from './WordDisplay'
 
-function LandingPage() {
+function LandingPage(props) {
     return (
         <div className='landingPage'>
             <div className='landingPage__center'>
-                <Login />
+                <Login 
+                setUser={props.setUser}
+                />
                 <LobbyJoin />
             </div>
             <div className='landingPage__footer'>

@@ -9,14 +9,16 @@ import wordData from './WordData';
 import {TimerContext, TimerProvider} from './TimerContext'
 
 function App() {
-  const user=  null;
+  const [user, setUser]= useState(null);
   const [index, setIndex] = useState(0)
   const [timer, setTimer] = useState(5)
   return (
     <div className="app">
       <Header />
       {
-        !user?(<LandingPage />):(
+        !user?(<LandingPage 
+        setUser={setUser}
+        />):(
           <div className='app__center'>
           <div className='app__right'>
               
