@@ -7,17 +7,17 @@ import CorrectWord from './CorrectWord';
 function Word(props) {
     const index= Math.floor(Math.random()*9) 
     var audioFile = new Audio(props.audio)
-    var newTime=props.timer;
+    var newTime= props.timer
     function runTimer(){
         setInterval(() => {
-            if(newTime>0)
+                if(newTime>=0)
             {
-                newTime=newTime-1
-                props.setTimer(newTime)
-            }else if(newTime===0)
+                props.setTimer(newTime--)
+            }else if(newTime<0)
             {
-                props.setTimer("Time's Up!");
+                clearInterval()
             }
+            
         },1000)
     }
     function handleClick(){
@@ -32,7 +32,7 @@ function Word(props) {
                 <h1>{props.timer}</h1>
                 </div>
                 <div className='word__display'>
-                {props.timer==="Time's Up!"&&<CorrectWord word={props.word}/>}
+                {props.timer===0&&<CorrectWord word={props.word}/>}
                 </div>
             </div>
                 <p>{props.def}</p>

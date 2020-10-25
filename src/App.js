@@ -6,6 +6,7 @@ import LandingPage from './LandingPage';
 import Lboard from './Lboard';
 import Word from './Word';
 import wordData from './WordData';
+import {TimerContext, TimerProvider} from './TimerContext'
 
 function App() {
   const [index, setIndex] = useState(0)
@@ -36,7 +37,8 @@ function App() {
             
           </div>
           <div className='app__left'>
-              <Lboard />
+                <Lboard />
+              
           </div>
       </div>
     </div>

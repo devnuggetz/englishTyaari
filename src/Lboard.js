@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import './Lboard.css'
+import { TimerContext } from './TimerContext'
 
 function Lboard() {
     return (

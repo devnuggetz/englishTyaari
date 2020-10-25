@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Header.css'
 import Pulse from 'react-reveal/Pulse';
+import { TimerContext } from './TimerContext';
 
 function Header() {
+    
     return (
         <div className='header'>
             <Pulse>

@@ -9,7 +9,8 @@ function Entry(props) {
     function submissionCheck(){
         if(entry.toUpperCase()===props.word.toUpperCase())
         {
-            alert("sucess");
+            console.log("sucess");
+            props.setTimer(0)
             
 
         }else{
@@ -22,6 +23,7 @@ function Entry(props) {
                     if(entry.toUpperCase()===props.word.toUpperCase())
                 {
                     alert("sucess");
+                    props.setTimer(0)
                     
                     
                 }else{
