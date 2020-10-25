@@ -5,8 +5,8 @@ function Login() {
     return (
         <div className='login'>
             <div className='login__card'>
-                <div className='login__card--login'>
-                <h1>Already a member?</h1>
+             <h1>Already a member?</h1>
+                <div className='login__card--login'> 
                 <input placeholder='Username'></input>
                 <input placeholder='Password'></input>
                 <button>Login</button>
