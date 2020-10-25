@@ -5,11 +5,15 @@ function LobbyJoin() {
     return (
         <div className='lobbyJoin'>
             <div className='lobbyJoin__card'>
-                <h1>Have a code?</h1>
-                <input placeholder='Enter the code'></input>
-                <button>Join</button>
-                <h1>Create a room</h1>
-                <button>Create</button>
+            <h1>Have a code to join?</h1>
+                <div className='lobbyJoin__card--code'> 
+                <input placeholder='Enter Code Here'></input>
+                <button>Login</button>
+                </div>
+                <div className='lobbyJoin__card--create'>
+                <button>Create a Room</button>
+                </div>
+               
             </div>
         </div>
     )

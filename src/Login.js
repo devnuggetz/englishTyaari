@@ -1,7 +1,14 @@
 import React from 'react'
 import './Login.css'
+import {auth, provider} from './firebase'
 
 function Login() {
+    const signIn=()=>{
+        auth.signInWithPopup(provider)
+        .then(result=>{
+            console.log(result)
+        }).catch(error=>alert(error.message))
+    }
     return (
         <div className='login'>
             <div className='login__card'>
@@ -12,7 +19,7 @@ function Login() {
                 <button>Login</button>
                 </div>
                 <div className='login__card--google'>
-                <button>Login with Google</button>
+                <button onClick={signIn}>Login with Google</button>
                 </div>
                
             </div>
